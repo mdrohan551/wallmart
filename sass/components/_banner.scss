@@ -1,0 +1,265 @@
+@import '../varibale/varibales';
+@import '../mixins/mixins';
+
+/*================================================
+                Banner Part Start
+================================================*/
+#banner_part {
+    .banner_slider {
+        position: relative;
+        .banner_slider_1 {
+            padding: 166px 0;
+
+            .slider_1_img {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: -260px;
+                    top: -88px;
+                }
+            }
+
+            .slider_1_text {
+                text-align: right;
+
+                h5 {
+                    @include fns (#666, 40px, 400, $ff1);
+                    margin-bottom: 2px;
+
+                    span {
+                        position: relative;
+
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            left: -2px;
+                            bottom: 8px;
+                            width: 104%;
+                            height: 3px;
+                            background-color: $clr4;
+                        }
+                    }
+                }
+
+                h2 {
+                    @include fns ($clr1, 50px, 700, $ff1);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    @include fns (#666, 24px, 400, $ff1);
+                    margin-bottom: 25px;
+
+                    span {
+                        color: $clr4;
+                        font-weight: 700;
+                    }
+                }
+
+                a {
+                    @include fns ($clr1, 14px, 600, $ff1);
+                    padding: 14px 32px;
+                    text-transform: uppercase;
+                    border: 2px solid $clr1;
+                    border-radius: 3px;
+                    transition: all linear 0.2s;
+
+                    i {
+                        margin-left: 5px;
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background: $clr1;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .banner_slider_2 {
+            padding: 166px 0;
+
+            .slider_2_text {
+                text-align: left;
+                margin-left: 35px;
+
+                h5 {
+                    @include fns (#666, 40px, 400, $ff1);
+                    margin-bottom: 2px;
+                    span {
+                        color: $clr4;
+                    }
+                }
+
+                h2 {
+                    @include fns ($clr1, 50px, 700, $ff1);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    @include fns (#666, 24px, 400, $ff1);
+                    margin-bottom: 25px;
+
+                    span {
+                        color: $clr4;
+                        font-weight: 700;
+                    }
+                }
+
+                a {
+                    @include fns ($clr1, 14px, 600, $ff1);
+                    padding: 14px 32px;
+                    text-transform: uppercase;
+                    border: 2px solid $clr1;
+                    border-radius: 3px;
+                    transition: all linear 0.2s;
+
+                    i {
+                        margin-left: 5px;
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background: $clr1;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .slider_2_img {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: -1030px;
+                    top: -196px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .banner_slider_3 {
+            padding: 163px 0;
+
+            .slider_3_img {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: 32px;
+                    top: -113px;
+                }
+            }
+
+            .slider_3_text {
+                text-align: right;
+                margin-right: 87px;
+
+                p {
+                    @include fns (#666, 24px, 400, $ff1);
+                    margin-bottom: 2px;
+                    text-transform: uppercase;
+
+                }
+
+                h2 {
+                    @include fns (#666, 40px, 400, $ff1);
+                    margin-bottom: 8px;
+                }
+
+                h5 {
+                    @include fns ($clr1, 50px, 700, $ff1);
+                    position: relative;
+                    margin-bottom: 23px;
+
+                    span {
+                        position: relative;
+                        z-index: 1;
+                        margin-right: 8px;
+                        color: #fff;
+
+                        &:before {
+                            position: absolute;
+                            content: '';
+                            top: 15%;
+                            transform: skewX(-17deg);
+                            left: -10%;
+                            background: #f77c29;
+                            height: 68%;
+                            width: 109%;
+                            z-index: -1;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        right: 7px;
+                        bottom: 7px;
+                        width: 60%;
+                        height: 3px;
+                        background: #f77c29;
+                    }
+                }
+
+                a {
+                    @include fns ($clr1, 14px, 600, $ff1);
+                    padding: 14px 32px;
+                    text-transform: uppercase;
+                    border: 2px solid $clr1;
+                    border-radius: 3px;
+                    transition: all linear 0.2s;
+
+                    i {
+                        margin-left: 5px;
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        background: $clr1;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .slider_arrow_lef,
+        .slider_arrow_rig{
+            position: absolute;
+            top: 44%;
+            font-size: 32px;
+            color: #666;
+            cursor: pointer;
+            transition: all linear 0.2s;
+            opacity: 0;
+            visibility: hidden;
+            &:hover{
+                color: $clr3;
+            }
+        }
+        .slider_arrow_lef{
+            left: 100px;
+            z-index: 1;
+        }
+        .slider_arrow_rig{
+            right: 100px;
+        }
+        &:hover{
+            .slider_arrow_lef{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(100px);
+            }
+            .slider_arrow_rig{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-100px);
+            }
+        }   
+    }
+}
+
+/*================================================
+                Banner Part End
+================================================*/

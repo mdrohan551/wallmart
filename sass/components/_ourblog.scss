@@ -1,0 +1,116 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+            Our Client Part Start
+================================================*/
+#our_blog {
+    margin-top: 60px;
+
+    .our_blog_header {
+        border-bottom: 1px solid #eee;
+
+        h5 {
+            @include fns (#333, 22px, 700, $ff1);
+            margin-bottom: 20px;
+        }
+    }
+
+    .our_blog_body {
+        margin-top: 20px;
+        .our_blog_sing {
+            width: 23.75%;
+            margin-right: 20px;
+
+            .our_blog_sing_img {
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                    transition: all linear 0.3s;
+                    cursor: pointer;
+                }
+
+            }
+
+            .our_blog_sing_text {
+                margin-top: 15px;
+                text-align: center;
+
+                p {
+                    span {
+                        @include fns (#999, 13px, 600, $ff1);
+
+                        a {
+                            @include fns (#333, 14px, 400, $ff1);
+
+                        }
+                    }
+
+                    a {
+                        @include fns (#333, 14px, 600, $ff1);
+                        padding: 0 3px;
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3;
+                        }
+                    }
+                }
+
+                h5 {
+                    a {
+                        @include fns (#333, 15px, 600, $ff1);
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3;
+                        }
+                    }
+                }
+
+                >a {
+                    @include fns (#333, 14.5px, 400, $ff1);
+                    margin-top: 10px;
+                    position: relative;
+                    i {
+                        margin-left: 5px;
+                        font-size: 15px;
+                    }
+                    &:after{
+                        position: absolute;
+                        content: '';
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: 0;
+                        height: 3px;
+                        width: 0;
+                        background: #333;
+                        transition: all linear 0.2s;
+                    }
+                    &:hover{
+                        &:after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                .our_blog_sing_img {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+            Our Client Part End
+================================================*/

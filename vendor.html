@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolmart eCommerce Marketplace</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/Jzoom.css">
+    <link rel="stylesheet" href="css/handle-counter.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--=============================================
+                    Header Part Start
+    ==============================================-->
+
+    <header id="header_part">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="header_left">
+                        <p>Welcome to Wolmart Store message or remove it!</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header_right d-flex justify-content-end">
+                        <div class="header_crncy">
+                            <ul>
+                                <li><a href="#">USD <i class="fas fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="#">USD</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header_lang">
+                            <ul>
+                                <li><img src="images/eng.png" alt="ENG Flag"><a href="#">ENG <i
+                                            class="fas fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><img src="images/eng.png" alt="ENG Flag"><a href="#">ENG</a></li>
+                                        <li><img src="images/fra.png" alt="FRA Flag"><a href="#">FRA</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header_menu">
+                            <ul class="d-flex">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">My Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="sign_reg">
+                            <ul class="d-flex">
+                                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i
+                                            class="fas fa-sign-in-alt"></i>Sign In</a>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <button type="button" class="btn_close" data-bs-dismiss="modal"
+                                                    aria-label="Close"><img src="images/flaticon/cross.png"></button>
+                                                <div class="sing_in">
+                                                    <ul class="nav sign_modal nav-pills d-flex" id="pills-tab"
+                                                        role="tablist">
+                                                        <li class="nav-item sing_button" role="presentation">
+                                                            <button class="nav-link active" id="pills-home-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                                type="button" role="tab" aria-controls="pills-home"
+                                                                aria-selected="true">SIGN IN</button>
+                                                        </li>
+                                                        <li class="nav-item sing_button" role="presentation">
+                                                            <button class="nav-link" id="pills-profile-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                                type="button" role="tab" aria-controls="pills-profile"
+                                                                aria-selected="false">SIGN UP</button>
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="tab-content mt-3" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="pills-home"
+                                                            role="tabpanel" aria-labelledby="pills-home-tab">
+                                                            <form>
+                                                                <div class="mb-3">
+                                                                    <label for="exampleInputEmail1"
+                                                                        class="form-label">Username or email address
+                                                                        *</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputEmail1"
+                                                                        aria-describedby="emailHelp">
+                                                                    <div id="emailHelp" class="form-text"></div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="exampleInputPassword1"
+                                                                        class="form-label">Password*</label>
+                                                                    <input type="password" class="form-control"
+                                                                        id="exampleInputPassword1">
+                                                                </div>
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input"
+                                                                        id="exampleCheck1">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleCheck1">Remember me</label>
+                                                                    <a class="check_box" href="#">Last your
+                                                                        password?</a>
+                                                                </div>
+                                                                <button type="submit"
+                                                                    class="sign_btn btn btn-primary">SIGN
+                                                                    IN</button>
+                                                                <p class="text-center form_para">Sign in with social
+                                                                    account</p>
+                                                                <div id="sign_logo" class="d-flex">
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-facebook-f face"></i></a></span>
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-twitter twi"></i></a></span>
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-google goog"></i></a></span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                            aria-labelledby="pills-profile-tab">
+                                                            <form>
+                                                                <div class="mb-3">
+                                                                    <label for="exampleInputEmail1"
+                                                                        class="form-label">Enter Email address
+                                                                        *</label>
+                                                                    <input type="email" class="form-control"
+                                                                        id="exampleInputEmail1"
+                                                                        aria-describedby="emailHelp">
+                                                                    <div id="emailHelp" class="form-text"></div>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="exampleInputPassword1"
+                                                                        class="form-label">Password*</label>
+                                                                    <input type="password" class="form-control"
+                                                                        id="exampleInputPassword1">
+                                                                </div>
+
+                                                                <p class="sign_up_para">Your personal data will be used
+                                                                    to support your experience throughout this website,
+                                                                    to manage access to your account, and for other
+                                                                    purposes described in our <a
+                                                                        style="color: #336699; font-size: 14px; border-bottom: 1px solid transparent;"
+                                                                        href="#">privacy policy.</a></p>
+                                                                <div><a style="font-size: 13px; color: #336699; margin-bottom: 20px;"
+                                                                        href="#">Signup as a vendor?</a></div>
+                                                                <div class="mb-3 form-check">
+                                                                    <input type="checkbox" class="form-check-input"
+                                                                        id="exampleCheck1">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleCheck1">I agree to the <a
+                                                                            style="color: #336699; font-size: 14px; border-bottom: 1px solid transparent;"
+                                                                            href="#">privacy policy.</a></label>
+
+                                                                </div>
+                                                                <button type="submit"
+                                                                    class="sign_btn btn btn-primary">SIGN
+                                                                    UP</button>
+                                                                <p class="text-center form_para">Sign in with social
+                                                                    account</p>
+                                                                <div id="sign_logo" class="d-flex">
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-facebook-f face"></i></a></span>
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-twitter twi"></i></a></span>
+                                                                    <span><a href="#"><i
+                                                                                class="fab fa-google goog"></i></a></span>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <span>/</span>
+                                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i
+                                            class="fas fa-user-tie"></i>Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--=============================================
+                    Header Part End
+    ==============================================-->
+
+
+
+    <!--=============================================
+                    Logo Part Start
+    ==============================================-->
+
+    <section id="logo_part">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo_search">
+                        <form>
+                            <select>
+                                <option selected>All Categories</option>
+                                <option value="1">Fashion</option>
+                                <option value="2">Furniture</option>
+                                <option value="3">Shoes</option>
+                                <option value="4">Sports</option>
+                                <option value="5">Games</option>
+                                <option value="6">Computers</option>
+                                <option value="7">Electronics</option>
+                                <option value="8">Kitchen</option>
+                                <option value="9">Clothing</option>
+                            </select>
+                            <input type="text" placeholder="Search in...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="logo_last d-flex justify-content-end">
+                        <div class="logo_chat">
+                            <a href="callto: 0(800)123-456">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <p style="display: inline-block;">Live Chat</p>
+                                        <span>or :</span>
+                                        <h4>0(800)123-456</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="logo_wish">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>Wishlist</p>
+                            </a>
+                        </div>
+                        <div class="logo_compare">
+                            <a href="#">
+                                <i class="fas fa-balance-scale"></i>
+                                <p>Compare</p>
+                            </a>
+                        </div>
+                        <div class="logo_cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <a href="#">
+                                <i class="fas fa-shopping-bag"></i>
+                                <p>Cart</p>
+                                <span>2</span>
+                            </a>
+                            <div class="offcanvas offcanvas-end cart_slide_page" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                                    <button type="button" class="cart_close_btn text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close">Close <i class="fas fa-chevron-right"></i></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="cart_product">
+                                        <div class="row" style="margin-bottom: 20px;">
+                                            <div class="col-lg-6">
+                                                <div class="cart_product_dis text-start">
+                                                    <a href="#">Beige knitted elas tic runner shoes</a>
+                                                    <p> 1 X <span>$25.68</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="cart_product_img text-end">
+                                                    <a href="#"><img src="images/product-1.jpg" alt="Product 1"> </a>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="cart_product_dis text-start">
+                                                    <a href="#">Beige knitted elas tic runner shoes</a>
+                                                    <p> 1 X <span>$25.68</span></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="cart_product_img text-end">
+                                                    <a href="#"><img src="images/product-2.jpg" alt="Product 2"> </a>
+                                                    <i class="fas fa-times"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cart_total_price d-flex">
+                                            <div class="col-lg-6 text-start">
+                                                <p>Subtotal:</p>
+                                            </div>
+                                            <div class="col-lg-6 text-end">
+                                                <p>$58.67</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="cart_final_btn d-flex">
+                                        <li class="cart_final_btn_1st"><a href="#"> VIEW CART </a></li>
+                                        <li class="cart_final_btn_2nd"><a href="#"> CHECKOUT </a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================
+                    Logo Part End
+    ==============================================-->
+
+
+
+    <!--=============================================
+                    Memu Part Start
+    ==============================================-->
+
+    <section id="menu_part">
+        <div class="container px-lg-0">
+            <div class="row">
+                <!-- Memu Left Start -->
+                <div class="col-lg-3">
+                    <div class="menu_left shop_menu_left">
+                        <a href="#"><i class="fas fa-list category_first"></i> Browse Categories <i
+                                class="fas fa-angle-down category_last"></i></a>
+                        <div class="menu_left_drop shop_menu_left_drop">
+                            <ul>
+                                <li class="fashion_dropdown_btn"><a href="#"><i class="fas fa-tshirt"></i>Fashion<i
+                                            class="fas fa-angle-right drop_arrow"></i></a>
+                                    <div class="fashion_dropdown">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="single_fashion_dropdown">
+                                                    <h4>Women</h4>
+                                                    <ul>
+                                                        <li><a href="#">New Arrivals</a></li>
+                                                        <li><a href="#">Best Sellers</a></li>
+                                                        <li><a href="#">Trending</a></li>
+                                                        <li><a href="#">Clothing</a></li>
+                                                        <li><a href="#">Shoes</a></li>
+                                                        <li><a href="#">Bags</a></li>
+                                                        <li><a href="#">Accessories</a></li>
+                                                        <li><a href="#">Jewlery & Watches</a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="single_fashion_dropdown">
+                                                    <h4>Men</h4>
+                                                    <ul>
+                                                        <li><a href="#">New Arrivals</a></li>
+                                                        <li><a href="#">Best Sellers</a></li>
+                                                        <li><a href="#">Trending</a></li>
+                                                        <li><a href="#">Clothing</a></li>
+                                                        <li><a href="#">Shoes</a></li>
+                                                        <li><a href="#">Bags</a></li>
+                                                        <li><a href="#">Accessories</a></li>
+                                                        <li><a href="#">Jewlery & Watches</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4"
+                                                style="background: url(images/menuimg1.jpg) no-repeat center/cover;">
+                                                <div class="single_fashion_dropdown">
+                                                    <h5>Get up to <span>20%OFF</span></h5>
+                                                    <h3>Hot Sales</h3>
+                                                    <a href="#">SHOP NOW <i class="fas fa-long-arrow-alt-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home_garden_dropdown_btn"><a href="#"><i class="fas fa-home"></i>Home &
+                                        Garden<i class="fas fa-angle-right drop_arrow"></i></a>
+                                    <div class="home_garden_dropdown">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="first_row">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single_home_garden_dropdown">
+                                                                <h4>Bedroom</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Beds, Frames & Bases</a></li>
+                                                                    <li><a href="#">Dressers</a></li>
+                                                                    <li><a href="#">Nightstands</a></li>
+                                                                    <li><a href="#">Kid's Beds & Headboards</a></li>
+                                                                    <li><a href="#">Armoires</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single_home_garden_dropdown">
+                                                                <h4>Office</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Office Chairs</a></li>
+                                                                    <li><a href="#">Desks</a></li>
+                                                                    <li><a href="#">Bookcases</a></li>
+                                                                    <li><a href="#">File Cabinets</a></li>
+                                                                    <li><a href="#">Breakroom Tables</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="second_row">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single_home_garden_dropdown">
+                                                                <h4>Living Room</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Coffee Tables</a></li>
+                                                                    <li><a href="#">Chairs</a></li>
+                                                                    <li><a href="#">Tables</a></li>
+                                                                    <li><a href="#">Futons & Sofa Beds</a></li>
+                                                                    <li><a href="#">Cabinets & Chests</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single_home_garden_dropdown">
+                                                                <h4>Kitchen & Dining</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Dining Sets</a></li>
+                                                                    <li><a href="#">Kitchen Storage Cabinets</a></li>
+                                                                    <li><a href="#">Bashers Racks</a></li>
+                                                                    <li><a href="#">Dining Chairs</a></li>
+                                                                    <li><a href="#">Dining Room Tables</a></li>
+                                                                    <li><a href="#">Bar Stools</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-4 px-lg-0"
+                                                style="background: url(images/menuimg2.jpg) no-repeat center/cover;">
+                                                <div class="single_home_garden_img_text">
+                                                    <p>Restroom</p>
+                                                    <h3>Furniture Sale</h3>
+                                                    <h5>Up to <span>25%OFF</span></h5>
+                                                    <a href="#">SHOP NOW <i class="fas fa-long-arrow-alt-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="electronics_dropdown_btn"><a href="#"><i class="fas fa-tv"></i>Electronics<i
+                                            class="fas fa-angle-right drop_arrow"></i></a>
+                                    <div class="electronics_dropdown">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="first_row">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single_electronics_dropdown">
+                                                                <h4>Laptops & Computers</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Desktop Computers</a></li>
+                                                                    <li><a href="#">Monitors</a></li>
+                                                                    <li><a href="#">Laptops</a></li>
+                                                                    <li><a href="#">Hard Drive & Storage</a></li>
+                                                                    <li><a href="#">Computer Accessories</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single_electronics_dropdown">
+                                                                <h4>Digital Cameras</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Digital SLR Cameras</a></li>
+                                                                    <li><a href="#">Sports & Action Cameras</a></li>
+                                                                    <li><a href="#">Camera Lenses</a></li>
+                                                                    <li><a href="#">Photo Printer</a></li>
+                                                                    <li><a href="#"> Digital Memory Cards</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="second_row">
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="single_electronics_dropdown">
+                                                                <h4>Tv & Video</h4>
+                                                                <ul>
+                                                                    <li><a href="#">TVs</a></li>
+                                                                    <li><a href="#">Home Audio Speakers</a></li>
+                                                                    <li><a href="#">Projectors</a></li>
+                                                                    <li><a href="#">Media Streaming Devices</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="single_electronics_dropdown">
+                                                                <h4>Cell Phones</h4>
+                                                                <ul>
+                                                                    <li><a href="#">Carrier Phones</a></li>
+                                                                    <li><a href="#">Unlocked Phones</a></li>
+                                                                    <li><a href="#">Phone & Cellphones Cases</a></li>
+                                                                    <li><a href="#">Cellphones Chargers</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-4 px-lg-0"
+                                                style="background: url(images/menuimg3.jpg) no-repeat center/cover;">
+                                                <div class="single_electronics_text">
+                                                    <p>Deals Of The Week</p>
+                                                    <h3>Save On Smart</h3>
+                                                    <h3>EarPhone</h3>
+                                                    <h5>20% OFF</h5>
+                                                    <a href="#">SHOP NOW</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="furniture_dropdown_btn"><a href="#"><i class="fas fa-couch"></i>Furniture<i
+                                            class="fas fa-angle-right drop_arrow"></i></a>
+                                    <div class="furniture_dropdown">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="single_furniture_dropdown">
+                                                    <h4>Furniture</h4>
+                                                    <ul>
+                                                        <li><a href="#">Sofas & Couches</a></li>
+                                                        <li><a href="#">Armchairs</a></li>
+                                                        <li><a href="#">Bed Frames</a></li>
+                                                        <li><a href="#">Beside Tables</a></li>
+                                                        <li><a href="#">Dressing Tables</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="single_furniture_dropdown">
+                                                    <h4>Lighting</h4>
+                                                    <ul>
+                                                        <li><a href="#">Light Bulbs</a></li>
+                                                        <li><a href="#">Lamps</a></li>
+                                                        <li><a href="#">Celling Lights</a></li>
+                                                        <li><a href="#">Wall Lights</a></li>
+                                                        <li><a href="#">Bathroom Lighting</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="single_furniture_dropdown">
+                                                    <h4>Home Accessories</h4>
+                                                    <ul>
+                                                        <li><a href="#">Decorative Accessories</a></li>
+                                                        <li><a href="#">Candals & Holders</a></li>
+                                                        <li><a href="#">Home Fragrance</a></li>
+                                                        <li><a href="#">Mirrors</a></li>
+                                                        <li><a href="#">Clocks</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="single_furniture_dropdown">
+                                                    <h4>Garden & Outdoors</h4>
+                                                    <ul>
+                                                        <li><a href="#">Garden Furniture</a></li>
+                                                        <li><a href="#">Lawn Mowers</a></li>
+                                                        <li><a href="#">Pressure Washers</a></li>
+                                                        <li><a href="#">All Garden Tools</a></li>
+                                                        <li><a href="#">Outdoor Dining</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="furniture_dropdown_img d-flex">
+                                                <div class="col-lg-6 furniture_dropdown_img_left"
+                                                    style="background: url(images/menuimg4.jpg) no-repeat center/cover">
+                                                    <div class="furniture_dropdown_text">
+                                                        <p>New Arrivals</p>
+                                                        <h4>Amazing Sofa</h4>
+                                                        <h5>Starting at <span>$125.00</span></h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 furniture_dropdown_img_right"
+                                                    style="background: url(images/menuimg5.jpg) no-repeat center/cover">
+                                                    <div class="furniture_dropdown_text">
+                                                        <p>Best Seller</p>
+                                                        <h4>Chair & Lamp</h4>
+                                                        <h5>From <span>$165.00</span></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fas fa-heartbeat"></i>Healthy & Beauty</a></li>
+                                <li><a href="#"><i class="fas fa-gift"></i>Gift Ideas</a></li>
+                                <li><a href="#"><i class="fas fa-gamepad"></i>Toy & Games</a></li>
+                                <li><a href="#"><i class="fas fa-utensils"></i>Cooking</a></li>
+                                <li><a href="#"><i class="fas fa-mobile-alt"></i>Smart Phones</a></li>
+                                <li><a href="#"><i class="fas fa-camera"></i>Cameras & Photo</a></li>
+                                <li><a href="#"><i class="far fa-gem"></i>Accessories</a></li>
+                                <li><a href="#">View All Categories<i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memu Left End -->
+
+                <!-- Memu Mid Start -->
+                <div class="col-lg-6">
+                    <div class="menu_mid">
+                        <ul class="d-flex">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="shop_btn"><a href="shop.html">Shop</a><i class="fas fa-angle-down"></i>
+                                <div class="shop_drop_down">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="shop_drop_down_1st">
+                                                <h4>Shop Pages</h4>
+                                                <ul>
+                                                    <li><a href="#">Banner With Sidebar</a></li>
+                                                    <li><a href="#">Boxed Banner</a></li>
+                                                    <li><a href="#">Full Width Banner</a></li>
+                                                    <li><a href="#">Horizontal Filter</a></li>
+                                                    <li><a href="#">Off Canvas Sidebar</a></li>
+                                                    <li><a href="#">Infinite Ajax Scroll</a></li>
+                                                    <li><a href="#">Right Sidebar</a></li>
+                                                    <li><a href="#">Both Sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="shop_drop_down_2nd">
+                                                <h4>Shop Layouts</h4>
+                                                <ul>
+                                                    <li><a href="#">3 Columns Mode</a></li>
+                                                    <li><a href="#">4 Columns Mode</a></li>
+                                                    <li><a href="#">5 Columns Mode</a></li>
+                                                    <li><a href="#">6 Columns Mode</a></li>
+                                                    <li><a href="#">7 Columns Mode</a></li>
+                                                    <li><a href="#">8 Columns Mode</a></li>
+                                                    <li><a href="#">List Mode</a></li>
+                                                    <li><a href="#">List Mode With Sidebar</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="shop_drop_down_3rd">
+                                                <h4>Product Pages</h4>
+                                                <ul>
+                                                    <li><a href="#">Variable Product</a></li>
+                                                    <li><a href="#">Featured & Sale</a></li>
+                                                    <li><a href="#">Data In Accordian</a></li>
+                                                    <li><a href="#">Data In Sections</a></li>
+                                                    <li><a href="#">Image Swatch</a></li>
+                                                    <li><a href="#">Extended Info</a></li>
+                                                    <li><a href="#">Without Sidebar</a></li>
+                                                    <li><a href="#">360° & Video</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="shop_drop_down_4th">
+                                                <h4>Product Layouts</h4>
+                                                <ul>
+                                                    <li><a href="#">Default</a></li>
+                                                    <li><a href="#">Vertical Thumbs</a></li>
+                                                    <li><a href="#">Grid Images</a></li>
+                                                    <li><a href="#">Masonry</a></li>
+                                                    <li><a href="#">Gallery</a></li>
+                                                    <li><a href="#">Sticky Info</a></li>
+                                                    <li><a href="#">Sticky Thumbs</a></li>
+                                                    <li><a href="#">Sticky Both</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="vendor_btn"><a href="vendor.html">Vendor</a><i class="fas fa-angle-down"></i>
+                                <div class="vendor_drop_down">
+                                    <ul>
+                                        <li class="vendor_sub_menu_1st"><a href="#">Store Listing <i
+                                                    class="fas fa-angle-right"></i></a>
+                                            <ul class="vendor_1st_sub_menu">
+                                                <li><a href="#">Store Listing 1</a></li>
+                                                <li><a href="#">Store Listing 2</a></li>
+                                                <li><a href="#">Store Listing 3</a></li>
+                                                <li><a href="#">Store Listing 4</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="vendor_sub_menu_2nd"><a href="#">Vendor Store <i
+                                                    class="fas fa-angle-right"></i></a>
+                                            <ul class="vendor_2nd_sub_menu">
+                                                <li><a href="#">Vendor Store 1</a></li>
+                                                <li><a href="#">Vendor Store 2</a></li>
+                                                <li><a href="#">Vendor Store 3</a></li>
+                                                <li><a href="#">Vendor Store 4</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blog_btn"><a href="#">Blog</a><i class="fas fa-angle-down"></i>
+                                <div class="blog_drop_down">
+                                    <ul>
+                                        <li><a href="#">Classic</a></li>
+                                        <li><a href="#">Listing</a></li>
+                                        <li class="blog_sub_menu_1st"><a href="#">Grid <i
+                                                    class="fas fa-angle-right"></i></a>
+                                            <ul class="blog_1st_sub_menu">
+                                                <li><a href="#">Grid 2 columns</a></li>
+                                                <li><a href="#">Grid 3 columns</a></li>
+                                                <li><a href="#">Grid 4 columns</a></li>
+                                                <li><a href="#">Grid slidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="blog_sub_menu_2nd"><a href="#">Masonry <i
+                                                    class="fas fa-angle-right"></i></a>
+                                            <ul class="blog_2nd_sub_menu">
+                                                <li><a href="#">Masonry 2 columns</a></li>
+                                                <li><a href="#">Masonry 3 columns</a></li>
+                                                <li><a href="#">Masonry 4 columns</a></li>
+                                                <li><a href="#">Masonry sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="blog_sub_menu_3rd"><a href="#">Mask <i
+                                                    class="fas fa-angle-right"></i></a>
+                                            <ul class="blog_3rd_sub_menu">
+                                                <li><a href="#">Blog mask grid</a></li>
+                                                <li><a href="#">Blog mask masonry</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Single Post</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="pages_btn"><a href="#">Pages</a><i class="fas fa-angle-down"></i>
+                                <div class="pages_drop_down">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Become A Vendor</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Error 404</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="elements_btn"><a href="#">Elements</a><i class="fas fa-angle-down"></i>
+                                <div class="elements_drop_down">
+                                    <ul>
+                                        <li><a href="#">Accordians</a></li>
+                                        <li><a href="#">Alert & Notification</a></li>
+                                        <li><a href="#">Blog Posts</a></li>
+                                        <li><a href="#">Buttons</a></li>
+                                        <li><a href="#">Call to Action</a></li>
+                                        <li><a href="#">Icons</a></li>
+                                        <li><a href="#">Icon Boxes</a></li>
+                                        <li><a href="#">Instagrams</a></li>
+                                        <li><a href="#">Product Category</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">Tabs</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                        <li><a href="#">Titles</a></li>
+                                        <li><a href="#">Typography</a></li>
+                                        <li><a href="#">Vendors</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Memu Mid End -->
+
+                <!-- Memu Right Start -->
+                <div class="col-lg-3">
+                    <div class="menu_right d-flex justify-content-end">
+                        <a href="#"> <i class="fas fa-map-marker-alt"></i> Track Order</a>
+                        <a href="#"> <i class="fas fa-tag"></i> Daily Deals</a>
+                    </div>
+                </div>
+                <!-- Memu Right End -->
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================
+                    Memu Part End
+    ==============================================-->
+
+
+
+    <!--=============================================
+                Shop BreadCrumb Part Start
+    ==============================================-->
+
+    <section id="shop_breadcrumb">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Vendor</a></li>
+                            <li class="breadcrumb-item"><a href="#">Dokan</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Store</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================
+                Shop BreadCrumb Part End 
+    ==============================================-->
+
+
+    <!--=============================================
+                Shop Main Part Start
+    ==============================================-->
+    <section id="shop_main">
+        <div class="container px-lg-0">
+            <div class="row">
+                <!-- Shop Main Left Start -->
+                <div class="col-lg-3">
+
+                    <div class="shop_main_left_collapse">
+                        <div class="shop_main_left_collapse_categories_heading">
+                            <a data-bs-toggle="collapse" href="#shop_main_left_categories" role="button"
+                                aria-expanded="true"> All Categories </a>
+                        </div>
+
+                        <div class="shop_main_left_collapse_body collapse show" id="shop_main_left_categories">
+                            <ul>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Babies</a></li>
+                                <li><a href="#">Beauty</a></li>
+                                <li><a href="#">Decoration</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Food</a></li>
+                                <li><a href="#">Furniture</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Medical</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Watches</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="shop_main_left_collapse">
+                        <div class="shop_main_left_collapse_price_heading">
+                            <a data-bs-toggle="collapse" href="#shop_main_left_price" role="button"
+                                aria-expanded="true"> Price </a>
+                        </div>
+
+
+                        <div class="shop_main_left_collapse_body collapse show" id="shop_main_left_price">
+                            <ul>
+                                <li><a href="#">$0.00 - $100.00</a></li>
+                                <li><a href="#">$100.00 - $200.00</a></li>
+                                <li><a href="#">$200.00 - $300.00</a></li>
+                                <li><a href="#">$300.00 - $500.00</a></li>
+                                <li><a href="#">$500.00+</a></li>
+                            </ul>
+                            <div class="shop_main_left_collapse_price_input d-flex">
+                                <input class="shop_main_left_collapse_price_input_1st" type="text" placeholder="$min">
+                                <input class="shop_main_left_collapse_price_input_2nd" type="text" placeholder="$max">
+                                <button class="shop_main_left_collapse_price_button" type="submit">Go</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop_main_left_collapse">
+                        <div class="shop_main_left_collapse_size_heading">
+                            <a data-bs-toggle="collapse" href="#shop_main_left_size" role="button" aria-expanded="true">
+                                Size </a>
+                        </div>
+                        <div class="shop_main_left_collapse_size_body collapse show" id="shop_main_left_size">
+                            <div class="d-flex">
+                                <input id="shop_size_body1" type="checkbox">
+                                <label for="shop_size_body1">Extra Large</label>
+                            </div>
+
+                            <div class="d-flex">
+                                <input id="shop_size_body2" type="checkbox">
+                                <label for="shop_size_body2">Large</label>
+                            </div>
+
+                            <div class="d-flex">
+                                <input id="shop_size_body3" type="checkbox">
+                                <label for="shop_size_body3">Medium</label>
+                            </div>
+
+                            <div class="d-flex">
+                                <input id="shop_size_body4" type="checkbox">
+                                <label for="shop_size_body4">Small</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop_main_left_collapse">
+                        <div class="shop_main_left_collapse_brand_heading">
+                            <a data-bs-toggle="collapse" href="#shop_main_left_brand" role="button"
+                                aria-expanded="true"> Brand </a>
+                        </div>
+                        <div class="shop_main_left_collapse_size_body collapse show" id="shop_main_left_brand">
+                            <div class="d-flex">
+                                <input id="shop_brand_body1" type="checkbox">
+                                <label for="shop_brand_body1">Elegant Auto Group</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body2" type="checkbox">
+                                <label for="shop_brand_body2">Green Grass</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body3" type="checkbox">
+                                <label for="shop_brand_body3">Node Js</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body4" type="checkbox">
+                                <label for="shop_brand_body4">NS8</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body5" type="checkbox">
+                                <label for="shop_brand_body5">Red</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body6" type="checkbox">
+                                <label for="shop_brand_body6">Skysuite Tech</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_brand_body7" type="checkbox">
+                                <label for="shop_brand_body7">Sterling</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shop_main_left_collapse">
+                        <div class="shop_main_left_collapse_color_heading">
+                            <a data-bs-toggle="collapse" href="#shop_main_left_color" role="button"
+                                aria-expanded="true"> color </a>
+                        </div>
+                        <div class="shop_main_left_collapse_size_body collapse show" id="shop_main_left_color">
+                            <div class="d-flex">
+                                <input id="shop_color_body1" type="checkbox">
+                                <label for="shop_color_body1">Black</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body2" type="checkbox">
+                                <label for="shop_color_body2">Blue</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body3" type="checkbox">
+                                <label for="shop_color_body3">Brown</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body4" type="checkbox">
+                                <label for="shop_color_body4">Green</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body5" type="checkbox">
+                                <label for="shop_color_body5">Grey</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body6" type="checkbox">
+                                <label for="shop_color_body6">Orange</label>
+                            </div>
+                            <div class="d-flex">
+                                <input id="shop_color_body7" type="checkbox">
+                                <label for="shop_color_body7">Yellow</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Shop Main Left End -->
+
+                <!-- Shop Main Right Start -->
+                <div class="col-lg-9">
+                    <!--=============================================
+                                Vendor Banner Part start 
+                    ==============================================-->
+                    <div class="vendor_banner">
+                        <img src="images/vendor/vendor_banner.jpg" class="img-fluid w-100" alt="">
+                        <div class="overly">
+                            <img src="images/vendor/v1.jpg" alt="">
+                            <h3>Vendor 1</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Steven Street, El Carjon California, United States (US) </p>
+                            <a href="callto: 1234567890"><i class="fas fa-phone-alt"></i> 1234567890 </a>
+                            <p><i class="fas fa-star"></i> 4.33 rating from 3 reviews </p>
+                            <p><i class="fas fa-shopping-bag"></i>  Store Open</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--=============================================
+                                Vendor Banner Part End 
+                    ==============================================-->
+                    <div class="shop_main_right_body">
+                        <ul class="d-flex flex-wrap">
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg1.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg1.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg2.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg4.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg5.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg6.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg7.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg8.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg10.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg11.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg12.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+                            <li class="shop_main_right__sing">
+                                <div class="shop_main_right_img">
+                                    <img src="images/shopmainimg13.jpg" class="img-fluid w-100" alt="">
+                                    <ul class="shop_main_right_img_overly d-flex">
+                                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-balance-scale"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop_main_right_text">
+                                    <p> <a href="#">Electronics</a></p>
+                                    <h5><a href="#">3D Television</a></h5>
+                                    <ul class="new_arraival_sing_star d-flex justify-content-center">
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <span>(3 Reviews)</span>
+                                    </ul>
+                                    <h3>$220.00 - $230.00</h3>
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- Shop Main Right End -->
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================
+                Shop Main Part End
+    ==============================================-->
+
+
+    <!--=============================================
+                Shop Banner Part Start
+    ==============================================-->
+
+    <!--=============================================
+                Shop Banner Part End
+    ==============================================-->
+
+
+
+
+
+
+
+
+
+
+    <!--=============================================
+                Subscribe Part Start
+    ==============================================-->
+    <section id="subscribe">
+        <div class="container px-lg-0">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="subscribe_left">
+                        <i class="far fa-envelope"></i>
+                        <div class="subscribe_left_text">
+                            <h5>Subscribe To Our Newsletter</h5>
+                            <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="subscribe_middle">
+                        <input type="text" placeholder="Your E-mail Address">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="subscribe_right">
+                        <button type="submit">Subscribe <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============================================
+                Subscribe Part End
+    ==============================================-->
+
+
+
+    <!--=============================================
+                    Footer Part Start
+    ==============================================-->
+    <section id="footer_part">
+        <div class="container px-lg-0">
+            <div class="upper_footer">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="upper_footer_1st">
+                            <img src="images/logo.png" alt="Logo">
+                            <h5>Got Question? Call us 24/7</h5>
+                            <a href="callto: +1-800-570-7777">1-800-570-7777</a>
+                            <p>Register now to get updates on pronot get up icons & coupons ster now toon.</p>
+                            <ul class="upper_footer_left_logo d-flex">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="upper_footer_2nd">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Team Member</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Affilate</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="upper_footer_2nd">
+                            <h3>My Account</h3>
+                            <ul>
+                                <li><a href="#">Track My order</a></li>
+                                <li><a href="#">view cart</a></li>
+                                <li><a href="#">sign in</a></li>
+                                <li><a href="#">help</a></li>
+                                <li><a href="#">my wishlist</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="upper_footer_2nd">
+                            <h3>customer service</h3>
+                            <ul>
+                                <li><a href="#">payment methods</a></li>
+                                <li><a href="#">money back guarantee!</a></li>
+                                <li><a href="#">product returns</a></li>
+                                <li><a href="#">support center</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">term & conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_footer">
+                <div class="middle_footer_sing d-flex">
+                    <h5>Consumer Electric:</h5>
+                    <a href="#">TV Television</a>
+                    <a href="#">Air Condition</a>
+                    <a href="#">Refrigerator</a>
+                    <a href="#">Washing Machine</a>
+                    <a href="#">Audio Speaker</a>
+                    <a href="#">Security Camera</a>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="middle_footer_sing d-flex">
+                    <h5>Clothing & Apparel:</h5>
+                    <a href="#">Men's T-shirt</a>
+                    <a href="#">Air Condition</a>
+                    <a href="#">Dresses</a>
+                    <a href="#">Men's Sneacker</a>
+                    <a href="#">Leather Backpack</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Sunglasses</a>
+                    <a href="#">Boots</a>
+                    <a href="#">Rayban</a>
+                    <a href="#">Acccessories</a>
+                </div>
+
+                <div class="middle_footer_sing d-flex">
+                    <h5>Home, Garden & Kitchen:</h5>
+                    <a href="#">Sofa</a>
+                    <a href="#">Chair</a>
+                    <a href="#">Refrigerator</a>
+                    <a href="#">Bed Room</a>
+                    <a href="#">Living Room</a>
+                    <a href="#">Cookware</a>
+                    <a href="#">Utensil</a>
+                    <a href="#">Blender</a>
+                    <a href="#">Garden Equipments</a>
+                    <a href="#">Decor</a>
+                    <a href="#">Library</a>
+                </div>
+
+                <div class="middle_footer_sing d-flex">
+                    <h5>Health & Beauty:</h5>
+                    <a href="#">Skin Care</a>
+                    <a href="#">Body Shower </a>
+                    <a href="#">Makeup</a>
+                    <a href="#">Hair Care</a>
+                    <a href="#">Lipstick</a>
+                    <a href="#">Perfume</a>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="middle_footer_sing d-flex">
+                    <h5>Jewelry & Watches:</h5>
+                    <a href="#">Necklace</a>
+                    <a href="#">Pendant</a>
+                    <a href="#">Diamond Ring</a>
+                    <a href="#">Silver Earing</a></li>
+                    <a href="#">Leather Watcher</a>
+                    <a href="#">Rolex</a>
+                    <a href="#">Gucci</a>
+                    <a href="#">Australian Opal</a>
+                    <a href="#">Ammolite</a>
+                    <a href="#">Sun Pyrite</a>
+                </div>
+
+                <div class="middle_footer_sing d-flex">
+                    <h5>Computer & Technologies:</h5>
+                    <a href="#">Laptop</a>
+                    <a href="#">iMac</a>
+                    <a href="#">Smartphone</a>
+                    <a href="#">Tablet</a>
+                    <a href="#">Apple</a>
+                    <a href="#">Asus</a>
+                    <a href="#">Deone</a>
+                    <a href="#">Wireless Speaker</a>
+                    <a href="#">Game Controller</a>
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="lower_footer">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="lower_footer_left">
+                            <p>Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="lower_footer_right d-flex justify-content-end">
+                            <p>We're using safe payment for</p>
+                            <img src="images/pay.png" alt="Pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--=============================================
+                    Footer Part End
+    ==============================================-->
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/Jzoom.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/handleCounter.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

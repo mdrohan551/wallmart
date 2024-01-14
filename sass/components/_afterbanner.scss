@@ -1,0 +1,31 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+                After Banner Part Start
+================================================*/
+#after_banner{
+    margin: 30px 0;
+    .after_banner_con{
+        padding: 30px 50px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        i{
+            font-size: 37px;
+            color: $clr3;
+            margin-left: 15px;
+        }
+        h5{
+            @include fns ($clr1, 15px, 600, $ff1);
+        }
+        p{
+            @include fns ($clr1, 13px, 400, $ff1);
+        }
+    }
+}
+
+
+
+/*================================================
+                After Banner Part End
+================================================*/

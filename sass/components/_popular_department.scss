@@ -1,0 +1,194 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+        Popular Department Part Start
+================================================*/
+#popular_department {
+    padding: 60px 0;
+
+    h4 {
+        text-align: center;
+        @include fns ($clr1, 20px, 700, $ff1);
+    }
+
+    .popular_department_nav {
+        margin:20px 0 30px;
+
+        nav {
+            .nav {
+                justify-content: center;
+
+                button {
+                    @include fns ($clr1, 13px, 600, $ff1);
+                    text-transform: uppercase;
+                    background: transparent;
+                    padding: 10px 22px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-right: 12px;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        border-color: $clr3;
+                        color: $clr3;
+                    }
+
+                    &.active {
+                        border-color: $clr3;
+                        color: $clr3;
+                    }
+                }
+            }
+        }
+    }
+
+    .popular_department_description {
+        .popular_department_sing_container {
+            .popular_department_sing {
+                width: 18.33%;
+                margin-right: 25px;
+                margin-bottom: 25px;
+
+                .popular_department_sing_img {
+                    position: relative;
+                    cursor: pointer;
+                    .hide_img_2{
+                        display: none;
+                    }
+                    &:hover {
+                        .hide_img_1{
+                            display: none;
+                        }
+                        .hide_img_2{
+                            display: block;
+                        } 
+                    }
+
+                    .popular_department_sing_img_overly {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all linear 0.2s;
+
+                        ul {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+                            li {
+                                width: 32px;
+                                height: 32px;
+                                line-height: 32px;
+                                border-radius: 50%;
+                                background: #fff;
+                                text-align: center;
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                                transition: all linear 0.2s;
+
+                                i {
+                                    color: #a5a5a5;
+                                    transition: all linear 0.2s;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                &:hover {
+                                    background: $clr3;
+
+                                    i {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .popular_department_sing_img_overly {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                .popular_department_sing_text {
+                    text-align: center;
+                    margin-top: 18px;
+
+                    h5 {
+                        @include fns ($clr1, 14px, 500, $ff1);
+                        transition: all linear 0.2s;
+                        margin-bottom: 7px;
+
+                        a {
+                            color: $clr1;
+                            transition: all linear 0.2s;
+
+                            &:hover {
+                                color: $clr3;
+                            }
+                        }
+                    }
+
+                    ul {
+                        margin-bottom: 5px;
+                        li {
+                            a {
+                                i {
+                                    color: #cccccc;
+                                }
+                            }
+
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3) {
+                                a {
+                                    i {
+                                        color: $clr4;
+                                    }
+                                }
+                            }
+                        }
+
+                        span {
+                            color: rgb(149, 149, 149);
+                            font-size: 13px;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    h3 {
+                        @include fns (#020101, 16px, 600, $ff1);
+
+                    }
+                }
+                &:nth-child(5),
+                &:nth-child(10){
+                    margin-right: 0;
+                }
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8),
+                &:nth-child(9),
+                &:nth-child(10){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
+/*================================================
+        Popular Department Part End
+================================================*/

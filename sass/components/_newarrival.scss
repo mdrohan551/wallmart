@@ -1,0 +1,65 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+                New Arrival Part Start
+================================================*/
+#new_arrival_part{
+    padding: 30px 0;
+    .new_arrival_left,
+    .new_arrival_right{
+        padding: 35px 39px;
+        border-radius: 3px;
+    }
+    .new_arrival_left{
+        h5{
+            @include fns ($clr1, 18px, 400, $ff1);
+            margin-bottom: 5px;
+            span{
+                font-weight: 700;
+                color: $clr4;
+            }
+        }
+        h3{
+            @include fns ($clr1, 26px, 800, $ff1);
+            text-transform: uppercase;
+        }
+        h4{
+            @include fns ($clr1, 26px, 400, $ff1);
+            margin-bottom: 18px;
+        }
+        p{
+            @include fns (#666, 14px, 400, $ff1);
+            span{
+                font-weight: 700;
+                color: $clr4;
+            }
+        }
+    }
+    .new_arrival_right{
+        h5{
+            @include fns (#c4c4c5, 18px, 400, $ff1);
+            margin-bottom: 5px;
+        }
+        h3{
+            @include fns (#fff, 26px, 800, $ff1);
+            text-transform: uppercase;
+        }
+        h4{
+            @include fns (#fff, 26px, 400, $ff1);
+            margin-bottom: 18px;
+        }
+        p{
+            @include fns (#fff, 14px, 400, $ff1);
+            span{
+                font-weight: 700;
+                color: $clr4;
+            }
+        }
+    }
+}
+
+
+/*================================================
+                New Arrival Part End
+================================================*/

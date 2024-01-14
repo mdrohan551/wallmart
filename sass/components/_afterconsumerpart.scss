@@ -1,0 +1,89 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+      After Consumer Electric Part Start
+================================================*/
+#after_consumer_part {
+    margin-top: 60px;
+
+    .after_consumer_part_all {
+        padding: 40px 70px;
+        border-radius: 5px;
+
+        .after_consumer_part_left {
+            position: relative;
+
+            h3 {
+                @include fns ($clr4, 70px, 700, $ff1);
+                display: inline-block;
+            }
+
+            p {
+                position: absolute;
+                right: 32px;
+                top: 0;
+                @include fns ($clr4, 45px, 600, $ff1);
+            }
+
+            span {
+                @include fns ($clr4, 20px, 600, $ff1);
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background: #5a5a5a;
+            }
+        }
+
+        .after_consumer_part_middle {
+            padding: 5px 0 0 20px;
+
+            h2 {
+                @include fns (#fff, 30px, 700, $ff1);
+                text-transform: uppercase;
+                margin-bottom: 6px;
+            }
+
+            p {
+                @include fns (#fff, 18px, 400, $ff1);
+
+                span {
+                    font-weight: 700;
+                    background: #fff;
+                    color: #333;
+                    padding: 0 6px
+                }
+            }
+        }
+
+        .after_consumer_part_right {
+            margin-top: 20px;
+            a {
+                @include fns (#fff, 14px, 600, $ff1);
+                border: 2px solid #fff;
+                border-radius: 3px;
+                padding: 10px 26px;
+                text-transform: uppercase;
+                transition: all linear 0.2s;
+                i {
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+                &:hover{
+                    background: #fff;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+       After Consumer Electric Part End
+================================================*/

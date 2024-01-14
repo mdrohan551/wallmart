@@ -1,0 +1,68 @@
+@import '../varibale/varibales';
+@import '../mixins/mixins';
+
+/*================================================
+           Subscribe Part Start
+================================================*/
+#subscribe {
+    margin-top: 60px;
+    background: $clr3;
+    padding: 30px 0;
+
+    .subscribe_left {
+        i {
+            color: #fff;
+            font-size: 48px;
+            margin-right: 15px;
+        }
+
+        .subscribe_left_text {
+            display: inline-block;
+
+            h5 {
+                @include fns (#fff, 17px, 600, $ff1);
+                text-transform: uppercase;
+                margin-bottom: 3px;
+            }
+
+            p {
+                @include fns (#fff, 13px, 400, $ff1);
+            }
+        }
+    }
+
+    .subscribe_middle {
+        input {
+            border-radius: 5px;
+            width: 100%;
+            padding: 11px 15px;
+            font-size: 14.5px;
+            color: #757575;
+        }
+    }
+
+    .subscribe_right {
+        button {
+            @include fns (#fff, 15px, 600, $ff1);
+            background: #333;
+            border: none;
+            width: 100%;
+            text-transform: uppercase;
+            padding: 12px 0;
+            border-radius: 5px;
+            transition: all linear 0.2s;
+
+            i {
+                margin-left: 8px;
+                font-size: 16px;
+            }
+            &:hover{
+                background: #454545;
+            }
+        }
+    }
+}
+
+/*================================================
+           Subscribe Part End
+================================================*/

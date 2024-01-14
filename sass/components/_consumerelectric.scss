@@ -1,0 +1,213 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+       Consumer Electric Part Start
+================================================*/
+#consumer_electric_part{
+    margin-top: 60px;
+    .consumer_electric_part_header{
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eee;
+        p{
+            @include fns (#333, 20px, 700, $ff1);
+        }
+        a{
+            @include fns (#333, 14px, 600, $ff1);
+            transition: all linear 0.2s;
+            i{
+                font-size: 15px;
+                margin-left: 5px;
+            }
+            &:hover{
+                color: $clr3;
+            }
+        }
+    }
+    .consumer_electric_part_body{
+        margin-top: 20px;
+        .consumer_electric_part_body_left{
+            padding: 40px 33px 40px 40px;
+            border-radius: 5px;
+            height: 100%;
+            p{
+                @include fns (#fff, 20px, 400, $ff1);
+                margin-bottom: 20px;
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -8px;
+                    width: 40px;
+                    height: 3px;
+                    background: #fff;
+                }
+            }
+            h3{
+                @include fns (#fff, 28px, 700, $ff1);
+                text-transform: uppercase;
+            }
+            h5{
+                @include fns (#fff, 28px, 400, $ff1);
+                margin-bottom: 22px;
+            }
+            a{
+                @include fns (#fff, 14px, 600, $ff1);
+                border-radius: 5px;
+                border: 2px solid #fff;
+                padding: 8px 20px;
+                text-transform: uppercase;
+                transition: all linear 0.2s;
+                &:hover{
+                    background: #fff;
+                    color: #333;
+                }
+            }
+        }
+
+        .consumer_electric_part_body_right {
+            .consumer_electric_part_body_right_sing {
+                width: 23.32%;
+                margin-right: 20px;
+                margin-bottom: 25px;
+
+                .consumer_electric_part_body_right_img {
+                    position: relative;
+                    cursor: pointer;
+                    .hide_img_2{
+                        display: none;
+                    }
+                    &:hover {
+                        .hide_img_1{
+                            display: none;
+                        }
+                        .hide_img_2{
+                            display: block;
+                        } 
+                    }
+
+                    .consumer_electric_part_body_right_img_overly {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all linear 0.2s;
+
+                        ul {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+
+                            li {
+                                width: 32px;
+                                height: 32px;
+                                line-height: 32px;
+                                border-radius: 50%;
+                                background: #fff;
+                                text-align: center;
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                                transition: all linear 0.2s;
+
+                                i {
+                                    color: #a5a5a5;
+                                    transition: all linear 0.2s;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                &:hover {
+                                    background: $clr3;
+
+                                    i {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .consumer_electric_part_body_right_img_overly {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                .consumer_electric_part_body_right_text {
+                    text-align: center;
+                    margin-top: 18px;
+
+                    h5 {
+                        @include fns ($clr1, 14px, 500, $ff1);
+                        transition: all linear 0.2s;
+                        margin-bottom: 7px;
+
+                        a {
+                            color: $clr1;
+                            transition: all linear 0.2s;
+
+                            &:hover {
+                                color: $clr3;
+                            }
+                        }
+                    }
+
+                    ul {
+                        margin-bottom: 5px;
+                        li {
+                            a {
+                                i {
+                                    color: #cccccc;
+                                }
+                            }
+
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3) {
+                                a {
+                                    i {
+                                        color: $clr4;
+                                    }
+                                }
+                            }
+                        }
+
+                        span {
+                            color: rgb(149, 149, 149);
+                            font-size: 13px;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    h3 {
+                        @include fns (#020101, 16px, 600, $ff1);
+
+                    }
+                }
+                &:nth-child(4),
+                &:nth-child(8){
+                    margin-right: 0;
+                }
+                &:nth-child(5),
+                &:nth-child(6),
+                &:nth-child(7),
+                &:nth-child(8){
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+        Consumer Electric Part End
+================================================*/

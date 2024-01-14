@@ -1,0 +1,24 @@
+@mixin fns($c, $fs, $fw, $ff) {
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+@mixin after1 ($l, $t, $w, $h) {
+    position: absolute;
+    content: '';
+    left: $l;
+    top: $t;
+    width: $w;
+    height: $h;
+}
+
+@mixin after2 ($l, $b, $w, $h) {
+    position: absolute;
+    content: '';
+    left: $l;
+    bottom: $b;
+    width: $w;
+    height: $h;
+}

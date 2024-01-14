@@ -1,0 +1,59 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+
+/*================================================
+           Shop Categories Part Start
+================================================*/
+#shop_categories {
+    .shop_all_categories {
+        padding-top: 30px;
+        padding-bottom: 37px;
+        border-bottom: 1px solid #f0f0f0;
+        .shop_sing_categories {
+            margin-right: 32px;
+            .shop_sing_categories_img {
+                margin-bottom: 12px;
+                a {
+                    img {
+                        border-radius: 50%;
+                        transition: all linear 0.2s;
+                    }
+                }
+            }
+
+            .shop_sing_categories_text {
+                text-align: center;
+
+                a {
+                    @include fns ($clr1, 15px, 700, $ff1);
+                    transition: all linear 0.2s;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                .shop_sing_categories_img {
+                    a {
+                        img {
+                            box-shadow: 0px 1px 9px -1px rgba(0,0,0,0.3);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .shop_sing_categories_text{
+                    a{
+                        color: $clr3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+           Shop Categories Part End
+================================================*/

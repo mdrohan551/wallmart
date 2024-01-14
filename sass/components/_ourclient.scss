@@ -1,0 +1,29 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+            Our Client Part Start
+================================================*/
+#our_client{
+    margin-top: 60px;
+    .our_client_header{
+        border-bottom: 1px solid #eee;
+        h5{
+            @include fns (#333, 22px, 700, $ff1);
+            margin-bottom: 20px;
+        }
+    }
+    .our_client_body{
+        margin-top: 20px;
+        ul{
+            li{
+                width: 16.666666%;
+                border: 1px solid #eeeeee;
+            }
+        }
+    }
+}
+
+/*================================================
+            Our Client Part End
+================================================*/

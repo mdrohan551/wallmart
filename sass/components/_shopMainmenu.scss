@@ -1,0 +1,42 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+           Shop Menu Part Start
+================================================*/
+
+.shop_menu_left {
+    background: #fff !important;
+    position: relative;
+    transition: all linear 0.2s;
+
+    .shop_menu_left_drop {
+        top: 41px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: all linear 0.3s !important;
+    }
+
+    &:hover {
+        background: $clr3 !important;
+
+        >a {
+            color: #fff !important;
+
+            i {
+                color: #fff !important;
+            }
+        }
+
+        .shop_menu_left_drop {
+            top: 51px !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            z-index: 1 !important;
+        }
+    }
+}
+
+/*================================================
+           Shop Menu Part End
+================================================*/

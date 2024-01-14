@@ -1,0 +1,29 @@
+@import '../varibale/varibales';
+@import '../mixins/mixins';
+
+
+.vendor_banner{
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    .overly{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        background: #000;
+        padding-left: 5%;
+        padding-top: 50px;
+        img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        ul{
+            display: flex;
+        }
+    }
+}

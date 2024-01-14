@@ -1,0 +1,78 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+                Categories Part Start
+================================================*/
+#categories_part {
+    background: #f5f5f5;
+    padding: 52px 0 60px;
+
+    h3 {
+        @include fns ($clr1, 20px, 700, $ff1);
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .categories_sing_part {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+            img{
+               transition: all linear 0.3s; 
+            }
+        .categories_text {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 14px;
+            overflow: hidden;
+            height: 25px;
+            text-align: center;
+            padding-top: 3px;
+
+            .categories_only_text {
+                transition: all linear 0.3s;
+
+                h4 {
+                    @include fns ($clr1, 15px, 600, $ff1);
+                    margin-bottom: 5px;
+                }
+
+                a {
+                    @include fns ($clr3, 15px, 600, $ff1);
+                    text-transform: uppercase;
+                    position: relative;
+                    &:after{
+                        @include after2 (50%, 0, 0, 3px);
+                        background: $clr3;
+                        transition: all linear 0.2s;
+                    }
+                    &:hover{
+                        &:after{
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .categories_text {
+                .categories_only_text {
+                    transform: translateY(-27px);
+                }
+            }
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+
+/*================================================
+                Categories Part End
+================================================*/

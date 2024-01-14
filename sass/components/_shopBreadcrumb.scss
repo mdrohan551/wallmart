@@ -1,0 +1,30 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+
+/*================================================
+           Shop BreadCrumb Part Start
+================================================*/
+#shop_breadcrumb{
+    padding: 15px 0;
+    .breadcrumb{
+        li{
+            color: #333;
+            font-size: 13.5px;
+            font-weight: 400;
+            a{
+                color: #333;
+                &:hover{
+                    color: $clr3;
+                }
+                &:before{
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+           Shop BreadCrumb Part End
+================================================*/

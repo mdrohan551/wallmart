@@ -1,0 +1,43 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+
+/*================================================
+           Shop Banner Part Start
+================================================*/
+#shop_banner{
+    margin-bottom: 30px;
+    .shop_banner_contain{
+        border-radius: 3px;
+        padding: 80px 85px;
+        h3{
+            @include fns ($clr1, 27px, 600, $ff1);
+            margin-bottom: 5px;
+        }
+        h2{
+            @include fns (#fff, 38px, 700, $ff1);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        a{
+            @include fns (#fff, 14px, 600, $ff1);
+            text-transform: uppercase;
+            background: $clr1;
+            border-color: $clr1;
+            border-radius: 3px;
+            padding: 16px 30px;
+            transition: all linear 0.2s;
+            i{
+                margin-left: 5px;
+                font-size: 15px;
+            }
+            &:hover{
+                background: #454545;
+                box-shadow: 0px 0px 5px 1px rgba(69,69,69,0.2);
+            }
+        }
+    }
+}
+/*================================================
+           Shop Banner Part End
+================================================*/

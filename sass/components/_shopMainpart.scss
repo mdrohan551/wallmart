@@ -1,0 +1,503 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+
+/*================================================
+            Shop Main Part Start
+================================================*/
+#shop_main {
+    .shop_main_left_collapse {
+        .shop_main_left_collapse_categories_heading {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+
+            a {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: capitalize;
+                position: relative;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 50%;
+                    width: 12px;
+                    height: 2px;
+                    background-color: #666;
+                    transition: all linear 0.2s;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 5px;
+                    top: 32%;
+                    width: 2px;
+                    height: 12px;
+                    background-color: #666;
+                    opacity: 0;
+                    transition: all linear 0.2s;
+                }
+
+                &.collapsed {
+                    &:before {
+                        transform: rotate(90deg);
+                    }
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 116px;
+                background: #666;
+            }
+        }
+
+        .shop_main_left_collapse_price_heading {
+
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+
+            a {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: capitalize;
+                position: relative;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 50%;
+                    width: 12px;
+                    height: 2px;
+                    background-color: #666;
+                    transition: all linear 0.2s;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 5px;
+                    top: 32%;
+                    width: 2px;
+                    height: 12px;
+                    background-color: #666;
+                    opacity: 0;
+                    transition: all linear 0.2s;
+                }
+
+                &.collapsed {
+                    &:before {
+                        transform: rotate(90deg);
+                    }
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 43px;
+                background: #666;
+            }
+        }
+
+        .shop_main_left_collapse_size_heading {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+
+            a {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: capitalize;
+                position: relative;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 50%;
+                    width: 12px;
+                    height: 2px;
+                    background-color: #666;
+                    transition: all linear 0.2s;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 5px;
+                    top: 32%;
+                    width: 2px;
+                    height: 12px;
+                    background-color: #666;
+                    opacity: 0;
+                    transition: all linear 0.2s;
+                }
+
+                &.collapsed {
+                    &:before {
+                        transform: rotate(90deg);
+                    }
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 35px;
+                background: #666;
+            }
+        }
+
+        .shop_main_left_collapse_brand_heading {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+
+            a {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: capitalize;
+                position: relative;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 50%;
+                    width: 12px;
+                    height: 2px;
+                    background-color: #666;
+                    transition: all linear 0.2s;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 5px;
+                    top: 32%;
+                    width: 2px;
+                    height: 12px;
+                    background-color: #666;
+                    opacity: 0;
+                    transition: all linear 0.2s;
+                }
+
+                &.collapsed {
+                    &:before {
+                        transform: rotate(90deg);
+                    }
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 52px;
+                background: #666;
+            }
+        }
+
+        .shop_main_left_collapse_color_heading {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+
+            a {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: capitalize;
+                position: relative;
+                display: block;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    right: 0px;
+                    top: 50%;
+                    width: 12px;
+                    height: 2px;
+                    background-color: #666;
+                    transition: all linear 0.2s;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    right: 5px;
+                    top: 32%;
+                    width: 2px;
+                    height: 12px;
+                    background-color: #666;
+                    opacity: 0;
+                    transition: all linear 0.2s;
+                }
+
+                &.collapsed {
+                    &:before {
+                        transform: rotate(90deg);
+                    }
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 46px;
+                background: #666;
+            }
+        }
+
+        .shop_main_left_collapse_body {
+            padding: 12px 0 16px;
+
+            ul {
+                li {
+                    a {
+                        @include fns ($clr1, 14px, 400, $ff1);
+                        display: block;
+                        padding: 6px 0;
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3;
+                        }
+                    }
+                }
+            }
+
+            .shop_main_left_collapse_price_input {
+                margin-top: 15px;
+
+                .shop_main_left_collapse_price_input_1st {
+                    width: 70px;
+                    border-radius: 3px;
+                    padding: 8px 13px;
+                    margin-right: 28px;
+                }
+
+                .shop_main_left_collapse_price_input_2nd {
+                    width: 70px;
+                    border-radius: 3px;
+                    padding: 8px 13px;
+                    margin-right: 15px;
+                }
+
+                .shop_main_left_collapse_price_button {
+                    width: 50px;
+                    border-radius: 3px;
+                    padding: 8px 13px;
+                    background: #336699;
+                    border: none;
+                    color: #fff;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        background: #3c78b4;
+                    }
+                }
+            }
+        }
+
+        .shop_main_left_collapse_size_body {
+            padding: 12px 0 16px;
+
+            >div {
+                cursor: pointer;
+
+                input {
+                    margin-right: 7px;
+                    cursor: pointer;
+                }
+
+                label {
+                    @include fns ($clr1, 14px, 400, $ff1);
+                    cursor: pointer;
+                    width: 100%;
+                    padding: 7px 0;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        color: $clr3;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .shop_main_right_body {
+        .shop_main_right__sing {
+            margin-right: 20px;
+            margin-bottom: 25px;
+            width: 31.84%;
+
+            .shop_main_right_img {
+                position: relative;
+
+                .shop_main_right_img_overly {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0;
+                    background: #fff;
+                    width: 170px;
+                    padding: 8px 18px;
+                    border-radius: 3px;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all linear 0.2s;
+
+                    li {
+                        margin-right: 10px;
+
+                        a {
+                            font-size: 16px;
+                            padding: 5px 5px;
+                            color: #333;
+                            transition: all linear 0.2s;
+
+                            &:hover {
+                                color: $clr3;
+                            }
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+            .shop_main_right_text {
+                text-align: center;
+                margin-top: 15px;
+
+                p {
+                    >a {
+                        @include fns (#999, 13px, 400, $ff1);
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3
+                        }
+                    }
+
+                }
+
+                h5 {
+                    margin-bottom: 5px;
+                    >a {
+                        @include fns ($clr1, 14px, 400, $ff1);
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3
+                        }
+                    }
+
+                }
+
+                ul {
+                    margin-bottom: 5px;
+                    li {
+                        a {
+                            i {
+                                color: $clr4;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    span {
+                        @include fns (#999, 13px, 400, $ff1);
+                        margin-left: 5px;
+                    }
+                }
+
+                h3 {
+                    @include fns ($clr1, 16px, 600, $ff1);
+                }
+            }
+
+            &:hover {
+                .shop_main_right_img_overly {
+                    opacity: 1;
+                    visibility: visible;
+                    bottom: 20px;
+                }
+            }
+            &:nth-child(3),
+            &:nth-child(6),
+            &:nth-child(9),
+            &:nth-child(12){
+                margin-right: 0;
+            }
+            &:nth-child(10),
+            &:nth-child(11),
+            &:nth-child(12){
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/*================================================
+            Shop Main Part End
+================================================*/

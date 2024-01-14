@@ -1,0 +1,103 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+        After Popular Department Part Start
+================================================*/
+#after_popular_department {
+    .after_popular_department_left {
+        padding: 35px 40px;
+        border-radius: 5px;
+        h5 {
+            @include fns (#eee, 14px, 600, $ff1);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            @include fns (#fff, 26px, 700, $ff1);
+        }
+
+        h4 {
+            @include fns (#fff, 26px, 700, $ff1);
+            margin-bottom: 20px;
+        }
+
+        a {
+            @include fns (#eee, 14.5px, 600, $ff1);
+            text-transform: uppercase;
+            position: relative;
+            i {
+                margin-left: 5px;
+                font-size: 16px;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                left: 50%;
+                bottom: -3px;
+                width: 0;
+                height: 3px;
+                background: #fff;
+                transform: translateX(-50%);
+                transition: all linear 0.2s;
+
+            }
+            &:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .after_popular_department_right {
+        padding: 35px 40px;
+        border-radius: 5px;
+        h5 {
+            @include fns (#333, 14px, 600, $ff1);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            @include fns (#333, 26px, 700, $ff1);
+        }
+
+        h4 {
+            @include fns (#333, 26px, 700, $ff1);
+            margin-bottom: 20px;
+        }
+
+        a {
+            @include fns (#333, 14.5px, 600, $ff1);
+            text-transform: uppercase;
+            position: relative;
+            i {
+                margin-left: 5px;
+                font-size: 16px;
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                left: 50%;
+                bottom: -3px;
+                width: 0;
+                height: 3px;
+                background: #333;
+                transform: translateX(-50%);
+                transition: all linear 0.2s;
+
+            }
+            &:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*================================================
+        After Popular Department Part End
+================================================*/

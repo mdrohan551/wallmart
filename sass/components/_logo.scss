@@ -1,0 +1,365 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+                Logo Part Start
+================================================*/
+
+#logo_part {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+    .logo {
+        a {
+            width: 144px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .logo_search {
+        form {
+            border: 2px solid $clr3;
+            border-radius: 3px;
+            position: relative;
+
+            select {
+                height: 46px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0 20px;
+                font-size: 13px;
+                color: #676767;
+
+                option {
+                    background-color: #fff;
+                }
+
+            }
+
+            input {
+                height: 36px;
+                border: none;
+                font-size: 13px;
+                color: #676767;
+                padding-left: 10px;
+                border-left: 1px solid #ddd;
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: #676767;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: $clr3;
+                }
+            }
+        }
+    }
+
+    .logo_chat {
+        padding: 3px 23px 0 0;
+        border-right: 1px solid #ddd;
+
+        a {
+            color: #333;
+
+            i {
+                font-size: 32px;
+                padding-top: 9px;
+                transition: all linear 0.2s;
+            }
+
+            p {
+                font-size: 13px;
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: $clr3;
+                }
+            }
+
+            span {
+                color: #999;
+                font-size: 13px;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-weight: 700;
+                margin-top: 3px;
+                transition: all linear 0.2s;
+            }
+        }
+
+        &:hover {
+
+            i,
+            h4 {
+                color: $clr3;
+            }
+        }
+    }
+
+    .logo_wish {
+        margin-left: 23px;
+        text-align: center;
+
+        a {
+            color: #333;
+            transition: all linear 0.2s;
+
+            i {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        &:hover {
+            a {
+                color: $clr3;
+            }
+        }
+    }
+
+    .logo_compare {
+        margin-left: 23px;
+        text-align: center;
+
+        a {
+            color: #333;
+            transition: all linear 0.2s;
+
+            i {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        &:hover {
+            a {
+                color: $clr3;
+            }
+        }
+    }
+
+    .logo_cart {
+        margin-left: 23px;
+        text-align: center;
+
+        >a {
+            color: #333;
+            position: relative;
+            transition: all linear 0.2s;
+
+            i {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            span {
+                display: inline-block;
+                color: #fff;
+                font-size: 13px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: $clr3;
+                position: absolute;
+                top: -7px;
+                right: -12px;
+            }
+        }
+
+        &:hover {
+            a {
+                color: $clr3;
+            }
+        }
+
+
+        .offcanvas-end {
+            padding: 14px;
+            width: 360px;
+        }
+
+        .cart_slide_page {
+            .offcanvas-header {
+                padding-bottom: 0;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 700;
+                color: $clr1;
+                text-transform: uppercase;
+            }
+
+            .cart_close_btn {
+                border: none;
+                background: transparent;
+                color: #666 !important;
+                font-size: 15px;
+                margin-right: 10px;
+                transition: all linear 0.2s;
+
+                i {
+                    margin-left: 5px;
+                    font-size: 13px;
+                }
+
+                &:hover {
+                    color: $clr3 !important;
+                }
+            }
+
+            .cart_product {
+                padding: 20px 0;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+
+                .cart_product_dis {
+                    a {
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #020101;
+                        font-weight: 600;
+                        margin-bottom: 12px;
+                        transition: all linear 0.2s;
+                        &:hover{
+                            color: $clr3;
+                        }
+                    }
+
+                    p {
+                        color: #999;
+                        font-size: 16px;
+
+                        span {
+                            color: $clr3;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .cart_product_img{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: -7px;
+                        right: -7px;
+                        width: 21px;
+                        height: 21px;
+                        font-size: 13px;
+                        text-align: center;
+                        line-height: 21px;
+                        border-radius: 50%;
+                        background: #fff;
+                        color: $clr1;
+                        cursor: pointer;
+                        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.7);
+                    }
+                }
+
+            }
+
+            .cart_total_price {
+                margin: 15px 0 25px;
+
+            }
+
+            .cart_final_btn {
+                li {
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: 50%;
+                }
+
+                .cart_final_btn_1st {
+                    border: 2px solid $clr1;
+                    margin-right: 10px;
+                    transition: all linear 0.2s;
+
+                    a {
+                        color: $clr1;
+                        padding: 6px 0;
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        border-color: $clr3;
+                        background: $clr3;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .cart_final_btn_2nd {
+                    border: 2px solid $clr3;
+                    transition: all linear 0.2s;
+
+                    a {
+                        color: #fff;
+                        background: $clr3;
+                        padding: 6px 0;
+                        width: 100%;
+                        transition: all linear 0.2s;
+                    }
+                    &:hover{
+                        a{
+                            background: #3c78b4;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+/*================================================
+                Logo Part End
+================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================
+                Logo Part Start
+================================================*/
+
+/*================================================
+                Logo Part End
+================================================*/

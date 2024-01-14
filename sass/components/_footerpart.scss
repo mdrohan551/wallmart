@@ -1,0 +1,177 @@
+@import '../mixins/mixins';
+@import '../varibale/varibales';
+
+/*================================================
+           Footer Part Start
+================================================*/
+#footer_part {
+    background: #f8f8f8;
+
+    .upper_footer {
+        padding: 60px 0 45px;
+
+        .upper_footer_1st {
+            img {
+                width: 150px;
+                margin-bottom: 18px;
+            }
+
+            h5 {
+                @include fns ($clr1, 13px, 500, $ff1);
+                margin-bottom: 10px;
+            }
+
+            a {
+                @include fns ($clr1, 18px, 600, $ff1);
+                margin-bottom: 6px;
+            }
+
+            p {
+                @include fns (#666, 13px, 400, $ff1);
+                line-height: 26px;
+                margin-bottom: 22px;
+            }
+
+            ul {
+                li {
+                    width: 32px;
+                    height: 32px;
+                    background: transparent;
+                    margin-right: 8px;
+                    text-align: center;
+                    border-radius: 50%;
+                    line-height: 32px;
+
+                    a {
+                        height: 100%;
+                        width: 100%;
+
+                        i {
+                            color: #fff;
+                            font-size: 15px;
+                            transition: all linear 0.3s;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        a {
+                            i {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        background: #1b4f9b;
+                    }
+
+                    &:nth-child(2) {
+                        background: #00adef;
+                    }
+
+                    &:nth-child(3) {
+                        background: #cc0001;
+                    }
+
+                    &:nth-child(4) {
+                        background: #2c567e;
+                    }
+
+                    &:nth-child(5) {
+                        background: #f96a02;
+                    }
+                }
+            }
+        }
+
+        .upper_footer_2nd {
+            margin-left: 60px;
+
+            h3 {
+                @include fns ($clr1, 16px, 600, $ff1);
+                text-transform: uppercase;
+                margin-bottom: 18px;
+            }
+
+            ul {
+                li {
+                    line-height: 32px;
+
+                    a {
+                        @include fns (#666, 14px, 400, $ff1);
+                        text-transform: capitalize;
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: $clr3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .middle_footer {
+        padding: 45px 0;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+
+        .middle_footer_sing {
+            margin-bottom: 25px;
+
+            h5 {
+                @include fns (#666, 14px, 600, $ff1);
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+
+
+            a {
+                @include fns (#666, 14px, 400, $ff1);
+                padding: 0 9px;
+                border-right: 1px solid #e7e7e7;
+                transition: all linear 0.2s;
+
+                &:last-child {
+                    border-right: 0;
+                }
+
+                &:hover {
+                    color: $clr3;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+    .lower_footer {
+        padding: 35px 0;
+
+        .lower_footer_left {
+            p {
+                @include fns (#666, 14px, 400, $ff1);
+            }
+        }
+
+        .lower_footer_right {
+            p {
+                @include fns (#666, 14px, 400, $ff1);
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+/*================================================
+           Footer Part End
+================================================*/
